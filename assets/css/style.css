@@ -20,17 +20,19 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 32px 0;
+    font-size: 16px;
 }
 
 header nav a {
     color: white;
     text-decoration: none;
     margin-right: 16px;
+    font-weight: bold;
 }
 
 header nav a:hover {
-    text-decoration: underline;
-    color: #fff;
+    text-decoration: underline #d6dee7 4px;
+    transition: 0.5s;
 }
 
 header .link a {
@@ -43,29 +45,80 @@ header .link a {
 /* Main */
 
 main section {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
-main section article h1,
-h2 {
+main section article h1 {
+    font-size: 80px;
+}
+
+main section article h2 {
     font-size: 60px;
 }
 
-#home img {
-    width: 400px;
-    height: 400px;
-    border-radius: 16px;
+main section article p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 16px 0;
 }
 
 .sobre-titulo {
     color: #d6dee7;
     opacity: 70.0%;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
 }
+
+/* Main - Home */
+
+.botao {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 32px; 
+}
+
+.botao-trabalho {
+    color: #d6dee7;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.botao-contato {
+    color: #d6dee7;
+    text-decoration: none;
+    border: 1px solid #d6dee7;
+    padding: 16px 32px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.botao-contato:hover {
+    background-color: #d6dee7;
+    color: #1e293b;
+}
+
+#home img {
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+    border: 1px solid #d6dee7;
+    margin-left: 30px;
+}
+
+
 
 /* footer */
