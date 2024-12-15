@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #1e293b;
+    background-color: #0c121c;
     color: white;
     width: 80%;
     margin: auto;
@@ -44,26 +44,13 @@ header .link a {
 
 /* Main */
 
+
 main section {
-    height: 90vh;
+    min-height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-main section article h1 {
-    font-size: 80px;
-}
-
-main section article h2 {
-    font-size: 60px;
-}
-
-main section article p {
-    font-size: 20px;
-    font-weight: 500;
-    margin: 16px 0;
 }
 
 .sobre-titulo {
@@ -75,7 +62,40 @@ main section article p {
     font-weight: 600;
 }
 
+.titulo {
+    font-size: 80px;
+    margin-bottom: 16px;
+}
+
+.subtitulo {
+    font-size: 60px;
+}
+
+main section article p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
 /* Main - Home */
+
+#home {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#home img {
+    width: 500px;
+    height: 500px;
+    border-radius: 16px;
+    border: 1px solid #d6dee7;
+    margin-left: 30px;
+}
 
 .botao {
     display: flex;
@@ -111,14 +131,285 @@ main section article p {
     color: #1e293b;
 }
 
-#home img {
-    width: 500px;
-    height: 500px;
-    border-radius: 16px;
-    border: 1px solid #d6dee7;
+
+/* Main - sobre */ 
+
+#sobre {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.sobre-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
     margin-left: 30px;
+}
+
+.sobre-conteudo p {
+    width: 500px;
+    text-align: justify;
+    margin: 16px 0;
+    font-size: 18px;
 }
 
 
 
+/* Main - habilidades */
+
+#habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.habilidades-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 32px 0;
+}
+
+.habilidades-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    border: 1px solid #d6dee7;
+}
+
+
+/* Main - trabalho */
+
+#trabalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 32px 0;
+}
+
+.trabalho-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+}
+
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    background-color: #1e293b;
+    border-radius: 16px;
+}
+
+.card img {
+    width: 300px;
+    height: 200px;
+    border-radius: 16px 16px 0 0;
+    border: 1px solid #d6dee7;
+}
+
+.card h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px 0;
+    padding: 0 16px;
+    color: #d6dee7;
+}
+
+.card p {
+    font-size: 16px;
+    color: #d6dee7;
+    padding: 0 16px;
+}
+
+.link-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    margin: 16px 0;
+    padding: 0 16px;
+}
+
+.link-card a {
+    color: #d6dee7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.link-card a:hover {
+    text-decoration: underline #d6dee7 4px;
+}
+
+
+/* Main - depoimentos */
+
+#depoimentos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+    gap: 32px;
+}
+
+.depoimentos-titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.depoimentos-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+
+.depoimentos-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 300px;
+    height: 250px;
+    background-color: #1e293b;
+    border-radius: 16px;
+    padding: 16px;
+    color: #d6dee7;
+}
+
+.depoimentos-card-1-autor {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.depoimentos-card-1-autor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #d6dee7;
+}
+
+strong{
+    font-weight: bold;
+    color: #7148fc;
+}
+
+
 /* footer */
+
+#contato {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 32px 0;
+    gap: 32px;
+}
+
+.contato-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.contato-texto p {
+    font-size: 20px;
+    color: #d6dee7;
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contato-info p {
+    font-size: 20px;
+    color: #d6dee7;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 16px;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.formulario form label {
+    font-size: 16px;
+    color: #d6dee7;
+}
+
+.formulario form input {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #d6dee7;
+    background-color: #0c121c;
+    color: #d6dee7;
+    padding: 0 16px;
+    font-size: 16px;
+}    
+
+.formulario form textarea {
+    width: 300px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid #d6dee7;
+    background-color: #0c121c;
+    color: #d6dee7;
+    padding: 0 16px;
+    font-size: 16px;
+    resize: none;
+}
+
+.formulario form button {
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #d6dee7;
+    background-color: #0c121c;
+    ;
+    color: #d6dee7;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.formulario form button:hover {
+    background-color: #7148fc;
+}
