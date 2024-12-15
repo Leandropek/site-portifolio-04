@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site Profissional</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
@@ -27,9 +28,9 @@
     </header>
 
     <main>
-        <section class="home">
+        <section id="home">
             <article>
-                <p>Desenvolvedor FullStack</p>
+                <p class="sobre-titulo">Desenvolvedor FullStack</p>
                 <h1>Oi! 👋 Eu sou Leandro Reis</h1>
                 <p>Sou um desenvolvedor criativo que mora em Minas Geraes, Brasil.</p>
                 <div>
@@ -37,18 +38,71 @@
                     <a href="">Entre em contato</a>
                 </div>
             </article>
-            <img src="" alt="">
+            <img src="assets/img/pele.jpg" alt="">
         </section>
 
-        <section class="sobre"></section>
-        <section class="habilidades"></section>
-        <section class="trabalho"></section>
-        <section class="depoimentos"></section>
+        <section id="sobre">
+            <article>
+                <p class="sobre-titulo">Quem sou eu?</p>
+                <h2>Eu projeto e construo
+                    aplicativos da web <strong>acessíveis e de
+                    qualidade</strong>.</h2>
+            </article>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit animi a nisi labore sint iste veniam at accusamus, ipsum suscipit sit. Aspernatur quas recusandae laborum dolore?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro rerum maxime nulla corporis culpa doloribus blanditiis, fugit sequi reiciendis laudantium at velit delectus voluptas aliquam consequuntur unde eligendi natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A praesentium laboriosam aliquid sint temporibus. Architecto ab ipsam laboriosam temporibus beatae.</p>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <article>
+                <p class="sobre-titulo">O que posso fazer?</p>
+                <h2>Habilidades</h2>
+            </article>
+            <div>imagens</div>
+        </section>
+
+        <section id="trabalho">
+            <article>
+                <p class="sobre-titulo">O que eu fiz?</p>
+                <h2>Trabalhos</h2>
+            </article>
+            <div>cards</div>
+        </section>
+
+        <section id="depoimentos">
+            <article>
+                <p class="sobre-titulo">O que dizem os meus clientes</p>
+                <h2>Depoimentos</h2>
+            </article>
+            <div>3 cards</div>
+        </section>
     </main>
 
-    <footer class="contato">
-        <section class="contato-endereco"></section>
-        <section class="formulario"></section>
+    <footer id="contato">
+        <section class="contato-endereco">
+            <div>
+                <p class="sobre-titulo">Entre em contato</p>
+                <h2>Contato</h2>
+            </div>
+            <div>
+                <p>Se você quiser me contratar ou tiver alguma dúvida, envie-me uma mensagem e eu entrarei em contato com você.</p>
+            </div>
+            <div>
+                <p>Estúdios Portfolio, Juiz de Fora, MG.</p>
+                <p>+55 98802-0860</p>
+                <p>leandropek@hotmail.com</p>
+            </div>            
+        </section>
+        <section class="formulario">
+            <form method="post" action="">
+                <input type="text" placeholder="Nome Completo">
+                <input type="email" placeholder="E-mail">
+                <input type="text" placeholder="Assunto">
+                <textarea placeholder="Mensagem"></textarea>
+                <button>Enviar</button>
+            </form>
+        </section>
     </footer>    
 </body>
 </html>
