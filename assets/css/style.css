@@ -131,6 +131,10 @@ main section article p {
     color: #1e293b;
 }
 
+a:focus, button:focus {
+    outline: 2px solid #7148fc;
+    outline-offset: 2px;
+}
 
 /* Main - sobre */ 
 
